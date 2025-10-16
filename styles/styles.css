@@ -16,8 +16,15 @@
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
+  --link-color: #2557eb;
   --link-hover-color: #1d3ecf;
+
+  /* EDC brand colors */
+  --primary-blue: #2557eb;
+  --primary-blue-hover: #1d42c4;
+  --blue-background: #0050b3;
+  --card-border: #e5e5e5;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -113,9 +120,21 @@ h6 {
   scroll-margin: 40px;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
+h1 {
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--heading-font-size-xl);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--heading-font-size-l);
+  font-weight: 600;
+}
+
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
@@ -175,27 +194,30 @@ button {
   margin: 12px 0;
   border: 2px solid transparent;
   border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  padding: 0.65em 1.5em;
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
+  background-color: var(--primary-blue);
   color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: background-color 0.2s ease;
 }
 
 a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--primary-blue-hover);
   cursor: pointer;
+  text-decoration: none;
 }
 
 button:disabled,
@@ -229,18 +251,84 @@ main img {
 }
 
 /* sections */
+main > div,
 main > .section {
-  margin: 40px 0;
-}
-
-main > .section > div {
+  margin: 0;
+  padding: 60px 0;
   max-width: 1200px;
-  margin: auto;
-  padding: 0 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
+main > div:first-of-type,
 main > .section:first-of-type {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+/* Hero section styling (2nd section) */
+main > div:nth-of-type(2) {
+  background-color: var(--light-color);
+  padding: 0;
+  max-width: none;
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+main > div:nth-of-type(2) picture,
+main > div:nth-of-type(2) img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+main > div:nth-of-type(2)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  z-index: 1;
+}
+
+main > div:nth-of-type(2) h2,
+main > div:nth-of-type(2) p,
+main > div:nth-of-type(2) a {
+  position: relative;
+  z-index: 2;
+}
+
+main > div:nth-of-type(2) > * {
+  max-width: 700px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+main > div:nth-of-type(2) h2 {
+  font-size: var(--heading-font-size-xxl);
+  margin-bottom: 16px;
   margin-top: 0;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+main > div:nth-of-type(2) p {
+  font-size: var(--body-font-size-m);
+  margin-bottom: 24px;
+  max-width: 600px;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 @media (width >= 900px) {
@@ -254,7 +342,64 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
-  padding: 40px 0;
+  padding: 60px 0;
+}
+
+main > div.blue-background {
+  background-color: var(--blue-background) !important;
+  color: white !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 80px 24px !important;
+  max-width: none !important;
+}
+
+main > div.blue-background > * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main > div.blue-background h2,
+main > div.blue-background h3,
+main > div.blue-background p {
+  color: white !important;
+}
+
+main > div.blue-background a:any-link {
+  color: white !important;
+  text-decoration: underline;
+}
+
+main > div.blue-background a:hover {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Announcement banner styling */
+main > div.announcement {
+  background-color: rgb(26, 101, 178) !important;
+  color: white !important;
+  text-align: center;
+  padding: 16px 24px !important;
+  margin: 0 !important;
+  max-width: none !important;
+}
+
+main > div.announcement p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: white !important;
+}
+
+main > div.announcement a:any-link {
+  color: white !important;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+main > div.announcement a:hover {
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .section.hidden {
