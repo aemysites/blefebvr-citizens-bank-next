@@ -25,26 +25,19 @@ const createBlockCell = (content) => {
 };
 
 // Transform Hero Section
-const transformHero = (main, document, url) => {
+const transformHero = (main, document) => {
   const hero = main.querySelector('.dcom-c-hero-commercial');
   if (!hero) return;
 
   const cells = [];
 
-  // Detect page type to use correct block name
-  const isCreditCards = url.includes('credit-cards');
-  const blockName = isCreditCards ? 'Hero-Creditcards' : 'Hero-Checking';
-
   // First row: Block name
-  cells.push([blockName]);
+  cells.push(['Hero-Checking']);
 
   // Second row: Image (if exists)
   const picture = hero.querySelector('picture');
-  const img = hero.querySelector('img');
   if (picture) {
     cells.push([picture.cloneNode(true)]);
-  } else if (img) {
-    cells.push([img.cloneNode(true)]);
   }
 
   // Third row: Content
@@ -60,43 +53,12 @@ const transformHero = (main, document, url) => {
   hero.replaceWith(block);
 };
 
-// Transform Feature Single (Summit Reserve card for credit cards)
-const transformFeatureSingle = (main, document) => {
-  const featureSingle = main.querySelector('.dcom-c-featureSingle');
-  if (!featureSingle) return;
-
-  const cells = [['Columns-Creditcards']];
-
-  // Get the image and content columns
-  const columns = featureSingle.querySelectorAll('[class*="grid__col"]');
-  if (columns.length >= 2) {
-    const imageCol = columns[0];
-    const contentCol = columns[1];
-
-    // Clone both columns to preserve all HTML structure
-    const imageClone = imageCol.cloneNode(true);
-    const contentClone = contentCol.cloneNode(true);
-
-    cells.push([imageClone, contentClone]);
-  }
-
-  const block = WebImporter.DOMUtils.createTable(cells, document);
-  featureSingle.replaceWith(block);
-};
-
-// Transform Cards Section (checking accounts or credit cards)
-const transformCards = (main, document, url, selector) => {
-  const isCreditCards = url.includes('credit-cards');
-  const blockName = isCreditCards ? 'Cards-Creditcards' : 'Cards-Accounts';
-
-  // Find the feature grid container
-  const featureGrid = main.querySelector(selector);
-  if (!featureGrid) return;
-
-  const cards = featureGrid.querySelectorAll('.dcom-c-featureGrid__item');
+// Transform Cards Section (3 checking accounts)
+const transformCards = (main, document) => {
+  const cards = main.querySelectorAll('.dcom-c-featureGrid__item');
   if (!cards || cards.length === 0) return;
 
-  const cells = [[blockName]];
+  const cells = [['Cards-Accounts']];
 
   cards.forEach((card) => {
     const image = card.querySelector('img');
@@ -128,7 +90,12 @@ const transformCards = (main, document, url, selector) => {
   });
 
   const block = WebImporter.DOMUtils.createTable(cells, document);
-  featureGrid.replaceWith(block);
+  // Replace the parent container
+  const firstCard = main.querySelector('.dcom-c-featureGrid__item');
+  if (firstCard) {
+    const container = firstCard.parentElement.parentElement;
+    container.replaceWith(block);
+  }
 };
 
 // Transform Columns Section (2 additional accounts)
@@ -223,109 +190,48 @@ export default {
     ]);
 
     const main = document.querySelector('body');
-    const isCreditCards = url.includes('credit-cards');
 
-    // Transform sections based on page type
-    transformHero(main, document, url);
-
-    if (isCreditCards) {
-      // Credit cards page structure
-      transformFeatureSingle(main, document); // Summit Reserve card
-      transformCards(main, document, url, '.dcom-c-featureGrid.dcom-c-featureGrid--image'); // 3 cards
-      transformCards(main, document, url, '.dcom-c-featureGrid.dcom-c-featureGrid--icon'); // Icon cards
-    } else {
-      // Checking page structure
-      transformCards(main, document, url, 'body'); // 3 checking accounts (search from body)
-      transformColumns(main, document); // 2 additional accounts
-      transformAccordion(main, document); // FAQs
-    }
+    // Transform each section
+    transformHero(main, document);
+    transformCards(main, document);
+    transformColumns(main, document);
+    transformAccordion(main, document);
 
     // Collect references to the block tables before adding metadata
     const tables = Array.from(main.querySelectorAll('table'));
+    const heroBlock = tables[0];
+    const cardsBlock = tables[1];
+    const columnsBlock = tables[2];
+    const accordionBlock = tables[3];
 
-    if (isCreditCards) {
-      // Credit cards sections: Hero (sage) | Columns (light) | Cards (light) | Cards (grey)
-      const heroBlock = tables[0];
-      const columnsBlock = tables[1];
-      const cardsBlock = tables[2];
-      const iconCardsBlock = tables[3];
+    // Add section metadata and separators
+    // Section 1: Hero (sage) | Section 2: Cards + Columns (default/light) | Section 3: Accordion (grey)
 
-      // Icon cards section (grey background)
-      if (iconCardsBlock) {
-        const iconSeparator = document.createElement('hr');
-        iconCardsBlock.before(iconSeparator);
+    // Accordion section (grey background)
+    if (accordionBlock) {
+      const accordionSeparator = document.createElement('hr');
+      accordionBlock.before(accordionSeparator);
 
-        const iconMetadata = WebImporter.DOMUtils.createTable([
-          ['Section Metadata'],
-          ['style', 'grey']
-        ], document);
-        iconSeparator.before(iconMetadata);
-      }
+      const accordionMetadata = WebImporter.DOMUtils.createTable([
+        ['Section Metadata'],
+        ['style', 'grey']
+      ], document);
+      accordionSeparator.before(accordionMetadata);
+    }
 
-      // Cards section (light background)
-      if (cardsBlock) {
-        const cardsSeparator = document.createElement('hr');
-        cardsBlock.before(cardsSeparator);
+    // Separator between hero and cards/columns section
+    if (cardsBlock) {
+      const separator = document.createElement('hr');
+      cardsBlock.before(separator);
+    }
 
-        const cardsMetadata = WebImporter.DOMUtils.createTable([
-          ['Section Metadata'],
-          ['style', 'light']
-        ], document);
-        cardsSeparator.before(cardsMetadata);
-      }
-
-      // Columns section (light background)
-      if (columnsBlock) {
-        const columnsSeparator = document.createElement('hr');
-        columnsBlock.before(columnsSeparator);
-
-        const columnsMetadata = WebImporter.DOMUtils.createTable([
-          ['Section Metadata'],
-          ['style', 'light']
-        ], document);
-        columnsSeparator.before(columnsMetadata);
-      }
-
-      // Hero section (sage background)
-      if (heroBlock) {
-        const heroMetadata = WebImporter.DOMUtils.createTable([
-          ['Section Metadata'],
-          ['style', 'sage']
-        ], document);
-        heroBlock.before(heroMetadata);
-      }
-    } else {
-      // Checking sections: Hero (sage) | Cards + Columns (default) | Accordion (grey)
-      const heroBlock = tables[0];
-      const cardsBlock = tables[1];
-      const accordionBlock = tables[3];
-
-      // Accordion section (grey background)
-      if (accordionBlock) {
-        const accordionSeparator = document.createElement('hr');
-        accordionBlock.before(accordionSeparator);
-
-        const accordionMetadata = WebImporter.DOMUtils.createTable([
-          ['Section Metadata'],
-          ['style', 'grey']
-        ], document);
-        accordionSeparator.before(accordionMetadata);
-      }
-
-      // Separator between hero and cards/columns section
-      if (cardsBlock) {
-        const separator = document.createElement('hr');
-        cardsBlock.before(separator);
-      }
-
-      // Hero section (sage background)
-      if (heroBlock) {
-        const heroMetadata = WebImporter.DOMUtils.createTable([
-          ['Section Metadata'],
-          ['style', 'sage']
-        ], document);
-        heroBlock.before(heroMetadata);
-      }
+    // Hero section (sage background)
+    if (heroBlock) {
+      const heroMetadata = WebImporter.DOMUtils.createTable([
+        ['Section Metadata'],
+        ['style', 'sage']
+      ], document);
+      heroBlock.before(heroMetadata);
     }
 
     // Create metadata for the page
