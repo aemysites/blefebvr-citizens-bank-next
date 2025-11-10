@@ -1,0 +1,30 @@
+{
+  "templates": {
+    "checking-overview": {
+      "name": "Checking Overview",
+      "description": "Checking accounts overview page template",
+      "blocks": [
+        {
+          "name": "hero",
+          "selector": "section.dcom-c-hero-commercial",
+          "parser": "hero.js"
+        },
+        {
+          "name": "cards",
+          "selector": "section.dcom-c-featureGrid",
+          "parser": "cards.js"
+        },
+        {
+          "name": "columns",
+          "selector": "section.dcom-c-textBlock",
+          "parser": "columns.js"
+        },
+        {
+          "name": "accordion",
+          "selector": "section.dcom-c-accordion",
+          "parser": "accordion.js"
+        }
+      ]
+    }
+  }
+}
