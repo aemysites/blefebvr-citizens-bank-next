@@ -1,0 +1,43 @@
+{
+  "variantName": "hero-creditcards",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2025-10-28T17:54:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.citizensbank.com/credit-cards/overview.aspx",
+    "originPage": "Credit Cards Overview",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "sage",
+    "density": "minimal",
+    "purpose": "creditcard-hero",
+    "imagePattern": "large",
+    "textLength": "short"
+  },
+  "contentPattern": {
+    "structure": "heading + text + CTA",
+    "headingMaxLength": 80,
+    "descriptionMaxLength": 150,
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "credit card landing pages",
+      "financial product overview pages",
+      "promotional hero sections"
+    ],
+    "notSuitableFor": [
+      "text-heavy content pages",
+      "pages without prominent imagery",
+      "multi-CTA hero sections"
+    ],
+    "similarVariants": []
+  },
+  "usage": {
+    "pagesUsing": ["/credit-cards/overview-aspx"],
+    "reuseCount": 1,
+    "lastUsed": "2025-10-28T17:54:00.000Z"
+  }
+}

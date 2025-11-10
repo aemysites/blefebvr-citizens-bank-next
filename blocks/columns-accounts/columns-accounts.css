@@ -1,0 +1,33 @@
+.columns-accounts > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-accounts img {
+  width: 100%;
+}
+
+.columns-accounts > div > div {
+  order: 1;
+}
+
+.columns-accounts > div > .columns-accounts-img-col {
+  order: 0;
+}
+
+.columns-accounts > div > .columns-accounts-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-accounts > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .columns-accounts > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

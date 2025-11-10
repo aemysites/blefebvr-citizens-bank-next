@@ -1,0 +1,33 @@
+.columns-creditcards > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-creditcards img {
+  width: 100%;
+}
+
+.columns-creditcards > div > div {
+  order: 1;
+}
+
+.columns-creditcards > div > .columns-creditcards-img-col {
+  order: 0;
+}
+
+.columns-creditcards > div > .columns-creditcards-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-creditcards > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .columns-creditcards > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

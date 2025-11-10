@@ -1,0 +1,43 @@
+{
+  "variantName": "cards-creditcards",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2025-10-28T17:54:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.citizensbank.com/credit-cards/overview.aspx",
+    "originPage": "Credit Cards Overview",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "product-grid",
+    "imagePattern": "icon",
+    "textLength": "medium"
+  },
+  "contentPattern": {
+    "structure": "image + heading + description + CTAs",
+    "headingMaxLength": 60,
+    "descriptionMaxLength": 300,
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "credit card product grids",
+      "feature comparison cards",
+      "icon-based feature lists"
+    ],
+    "notSuitableFor": [
+      "single feature highlights",
+      "text-heavy content",
+      "complex layouts"
+    ],
+    "similarVariants": []
+  },
+  "usage": {
+    "pagesUsing": ["/credit-cards/overview-aspx"],
+    "reuseCount": 1,
+    "lastUsed": "2025-10-28T17:54:00.000Z"
+  }
+}

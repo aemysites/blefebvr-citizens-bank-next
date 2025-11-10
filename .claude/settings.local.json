@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_excat_playwright__browser_navigate",
+      "mcp__plugin_excat_playwright__browser_evaluate",
+      "mcp__plugin_excat_playwright__browser_take_screenshot",
+      "mcp__plugin_excat_excatops__search_blocks",
+      "mcp__plugin_excat_excatops__get_block_examples",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/content.html)",
+      "mcp__plugin_excat_playwright__browser_snapshot",
+      "mcp__plugin_excat_playwright__browser_type",
+      "mcp__plugin_excat_playwright__browser_click",
+      "mcp__plugin_excat_excatops__convert_markdown_to_html",
+      "Bash(echo $DA_BEARER_TOKEN)",
+      "Bash(printenv)",
+      "Bash(curl:*)",
+      "Bash(\"https://admin.da.live/source/aemysites/blefebvr-citizens-bank-next/checking-overview.html\" )",
+      "Bash('https://admin.da.live/source/aemysites/blefebvr-citizens-bank-next/checking-overview.html' )",
+      "Bash('https://admin.da.live/source/aemysites/blefebvr-citizens-bank-next/checking-overview' )",
+      "Bash(cat:*)",
+      "Bash(env)",
+      "Bash(npm install:*)",
+      "Bash(aem-import-helper:*)",
+      "mcp__plugin_excat_excatops__get_all_blocks_catalog",
+      "Bash(mkdir:*)",
+      "mcp__plugin_excat_excatops__upload_html_to_da",
+      "Skill(excat:excat-eds-migration-expert)",
+      "mcp__plugin_excat_excatops__generate_document_path",
+      "mcp__plugin_excat_excatops__get_vanilla_block_code",
+      "Bash(for:*)",
+      "Bash(if [ -f \"$dirmetadata.json\" ])",
+      "Bash(then cat \"$dirmetadata.json\")",
+      "Bash(else echo \"No metadata.json\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(sed:*)",
+      "mcp__plugin_excat_playwright__browser_close"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
