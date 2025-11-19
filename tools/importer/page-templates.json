@@ -25,6 +25,25 @@
           "parser": "accordion.js"
         }
       ]
+    },
+    "asset-based-lending": {
+      "name": "Asset-Based Lending",
+      "description": "Corporate finance capability page with hero banner and transaction tombstones",
+      "urls": [
+        "https://www.citizensbank.com/corporate-finance/capability/financing/asset-based-lending.aspx"
+      ],
+      "blocks": [
+        {
+          "name": "hero-finance",
+          "selector": "section.dcom-c-hero-commercial",
+          "parser": "hero-finance.js"
+        },
+        {
+          "name": "cards-tombstones",
+          "selector": "section.dcom-c-tombstones",
+          "parser": "cards-tombstones.js"
+        }
+      ]
     }
   }
 }

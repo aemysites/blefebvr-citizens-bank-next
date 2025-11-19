@@ -38,7 +38,13 @@
       "mcp__plugin_excat_playwright__browser_install",
       "Skill(excat:page-decomposition)",
       "Skill(excat:block-collection-and-party)",
-      "mcp__plugin_excat_excatops__get_block_details"
+      "mcp__plugin_excat_excatops__get_block_details",
+      "Skill(excat:excat-content-import-orchestrator)",
+      "Bash(if [ -f tools/importer/page-templates.json ])",
+      "Bash(then cat tools/importer/page-templates.json)",
+      "Bash(else echo \"No existing page-templates.json\")",
+      "Bash(node --check:*)",
+      "Bash(echo:*)"
     ],
     "deny": [],
     "ask": []

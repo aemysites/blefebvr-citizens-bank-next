@@ -1,0 +1,41 @@
+{
+  "variantName": "cards-tombstones",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2025-11-18T21:04:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.citizensbank.com/corporate-finance/capability/financing/asset-based-lending.aspx",
+    "originPage": "Corporate Finance - Asset-Based Lending",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "transaction-tombstones",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image grid with optional text",
+    "buttonCount": 0,
+    "imageCount": 7
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "transaction tombstone displays",
+      "deal showcase pages",
+      "client logo grids",
+      "portfolio displays",
+      "visual case studies"
+    ],
+    "notSuitableFor": [
+      "text-heavy card layouts",
+      "product catalogs with descriptions",
+      "blog post previews"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/corporate-finance/capability/financing/asset-based-lending-aspx"],
+    "reuseCount": 1,
+    "lastUsed": "2025-11-18T21:04:00.000Z"
+  }
+}
