@@ -1,0 +1,15 @@
+{
+  "data": [
+    {
+      "type": "text",
+      "field": "email",
+      "label": "Email Address",
+      "placeholder": "Enter your email",
+      "required": "true"
+    },
+    {
+      "type": "submit",
+      "label": "Subscribe"
+    }
+  ]
+}

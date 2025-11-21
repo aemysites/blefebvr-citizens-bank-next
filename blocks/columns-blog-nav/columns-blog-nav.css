@@ -1,0 +1,33 @@
+.columns-blog-nav > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-blog-nav img {
+  width: 100%;
+}
+
+.columns-blog-nav > div > div {
+  order: 1;
+}
+
+.columns-blog-nav > div > .columns-blog-nav-img-col {
+  order: 0;
+}
+
+.columns-blog-nav > div > .columns-blog-nav-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-blog-nav > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .columns-blog-nav > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "variantName": "form-newsletter",
+  "baseBlock": "form",
+  "version": "1.0.0",
+  "created": "2025-11-20T17:16:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://ketointhecity.com/blog/keto-recipe-peanut-butter-cup-chia-pudding",
+    "originPage": "blog post article page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "colored",
+    "density": "compact",
+    "purpose": "newsletter-signup",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "heading + description + email input + submit button + social icons",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "newsletter signup forms",
+      "email collection forms",
+      "subscription forms"
+    ],
+    "notSuitableFor": [
+      "complex multi-field forms",
+      "contact forms"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/blog/keto-recipe-peanut-butter-cup-chia-pudding"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2025-11-20T17:16:00.000Z"
+  }
+}

@@ -1,0 +1,61 @@
+<div><h1 id="import-infrastructure">Import Infrastructure</h1>
+<p>This directory contains the import infrastructure for bulk content migration from ketointhecity.com to Adobe Edge Delivery Services.</p>
+<h2 id="structure">Structure</h2>
+<pre><code>tools/importer/
+├── import.js              # Main import script (WebImporter transform)
+├── page-templates.json    # Page type definitions and section mappings
+├── parsers/              # Block parsers for transforming HTML to EDS blocks
+│   ├── fragment-social.js    # Parser for social sharing fragments
+│   ├── columns-blog-nav.js   # Parser for blog navigation
+│   └── form-newsletter.js    # Parser for newsletter forms
+└── README.md             # This file
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>This import infrastructure is designed to work with the <a href="https://www.aem.live/developer/importer">Adobe Edge Delivery Services Import Tools</a>.</p>
+<h3 id="using-the-import-tool">Using the Import Tool</h3>
+<ol>
+<li>Open the import tool in your browser by navigating to a page with <code>?import</code> appended to the URL</li>
+<li>The import.js script will automatically apply the appropriate page template based on the URL pattern</li>
+<li>Parsers will transform source HTML into EDS-compliant block tables</li>
+</ol>
+<h3 id="page-templates">Page Templates</h3>
+<p>The <code>page-templates.json</code> file defines how different page types should be structured:</p>
+<ul>
+<li><strong>blog-post</strong>: Standard blog post with article content, social sharing, navigation, and newsletter signup</li>
+</ul>
+<p>Each template specifies:</p>
+<ul>
+<li>Section selectors (CSS selectors to find content in the source HTML)</li>
+<li>Section types (default content or blocks)</li>
+<li>Block parsers to use for transforming content</li>
+<li>Section metadata (e.g., background colors)</li>
+</ul>
+<h3 id="parsers">Parsers</h3>
+<p>Each parser transforms a specific type of content into an EDS block:</p>
+<ul>
+<li><strong>fragment-social.js</strong>: Creates a fragment block that references <code>/fragments/social-sharing</code></li>
+<li><strong>columns-blog-nav.js</strong>: Extracts previous/next blog post links and creates a 2-column navigation block</li>
+<li><strong>form-newsletter.js</strong>: Creates a form block that references <code>/forms/newsletter-signup</code></li>
+</ul>
+<h2 id="block-variants">Block Variants</h2>
+<p>This import infrastructure works with the following block variants:</p>
+<ul>
+<li><code>fragment-social</code> (base: fragment) - Social sharing buttons</li>
+<li><code>columns-blog-nav</code> (base: columns) - Blog post navigation</li>
+<li><code>form-newsletter</code> (base: form) - Newsletter signup form</li>
+</ul>
+<p>Each variant has its own <code>.js</code>, <code>.css</code>, and <code>metadata.json</code> files in the <code>/blocks</code> directory.</p>
+<h2 id="extending">Extending</h2>
+<p>To add support for new page types or blocks:</p>
+<ol>
+<li>Add a new entry to <code>page-templates.json</code> with appropriate selectors</li>
+<li>Create a new parser in <code>parsers/</code> if needed</li>
+<li>Import and register the parser in <code>import.js</code></li>
+<li>Create corresponding block variant in <code>/blocks</code> directory</li>
+</ol>
+<h2 id="generated">Generated</h2>
+<p>This import infrastructure was generated during the migration of:</p>
+<ul>
+<li>https://ketointhecity.com/blog/keto-recipe-peanut-butter-cup-chia-pudding</li>
+</ul>
+<p>Date: 2025-11-20</p></div>
