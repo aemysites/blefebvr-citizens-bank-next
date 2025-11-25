@@ -96,7 +96,8 @@
       "Bash(\"https://ketointhecity.com/blog/keto-instant-pot-recipe-spice-cake-with-lemon-drizzle\")",
       "Bash(/Users/blefebvr/workspace/internal/Adobe-AEM-Foundation/aem-excat-plugin/excat-marketplace/excat/skills/excat-multi-page-import/scripts/aem-import-bundle.sh:*)",
       "Bash(do)",
-      "Bash(htmlfile=\"$mdfile%.md.html\")"
+      "Bash(htmlfile=\"$mdfile%.md.html\")",
+      "Bash($CLAUDE_PLUGIN_ROOT/skills/excat-multi-page-import/scripts/aem-import-bundle.sh:*)"
     ],
     "deny": [],
     "ask": []

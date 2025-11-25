@@ -3,7 +3,12 @@
     {
       "name": "blog-recipe",
       "urls": [
-        "https://ketointhecity.com/blog/keto-recipe-peanut-butter-cup-chia-pudding"
+        "https://ketointhecity.com/blog/keto-recipe-peanut-butter-cup-chia-pudding",
+        "https://ketointhecity.com/blog/keto-recipe-chocolate-mousse",
+        "https://ketointhecity.com/blog/keto-recipe-frosty-chocolate-milkshake",
+        "https://ketointhecity.com/blog/keto-recipe-shredded-green-chile-chicken-bowl",
+        "https://ketointhecity.com/blog/keto-recipes-coconut-curry-mussels",
+        "https://ketointhecity.com/blog/keto-cauliflower-steaks-with-bacon-and-blue-cheese"
       ],
       "description": "Keto recipe blog post with title, introduction, recipe image, ingredients list, and directions. All default content - no EDS blocks required.",
       "blocks": []
