@@ -1,0 +1,89 @@
+{
+  "url": "https://ketointhecity.com/blog/keto-recipe-peanut-butter-cup-chia-pudding",
+  "analysisDate": "2025-11-25",
+  "sections": [
+    {
+      "id": 1,
+      "name": "Blog Article",
+      "background": "light",
+      "sectionMetadata": null,
+      "contentSequences": [
+        {
+          "sequence": 1,
+          "description": "H1 title: 'KETO RECIPE: Peanut Butter Cup Chia Pudding'",
+          "decision": "DEFAULT CONTENT",
+          "reason": "Author can type a heading normally - this is just an H1 title"
+        },
+        {
+          "sequence": 2,
+          "description": "Horizontal rule separator",
+          "decision": "DEFAULT CONTENT",
+          "reason": "Thematic break - author inserts horizontal line in document"
+        },
+        {
+          "sequence": 3,
+          "description": "Introduction paragraph describing the recipe and tips",
+          "decision": "DEFAULT CONTENT",
+          "reason": "Author can type a paragraph normally - just descriptive text"
+        },
+        {
+          "sequence": 4,
+          "description": "Large recipe image showing chia pudding in jars",
+          "decision": "DEFAULT CONTENT",
+          "reason": "Inline image - author inserts image in document"
+        },
+        {
+          "sequence": 5,
+          "description": "Recipe ingredients - H3 heading followed by unordered list of 7 ingredients",
+          "decision": "DEFAULT CONTENT",
+          "reason": "Author can type heading and bullet list normally - standard document formatting"
+        },
+        {
+          "sequence": 6,
+          "description": "Recipe directions - paragraph followed by ordered list with 3 steps",
+          "decision": "DEFAULT CONTENT",
+          "reason": "Author can type text and numbered list normally - standard document formatting"
+        },
+        {
+          "sequence": 7,
+          "description": "Horizontal rule separator",
+          "decision": "DEFAULT CONTENT",
+          "reason": "Thematic break - author inserts horizontal line in document"
+        }
+      ]
+    }
+  ],
+  "excludedContent": {
+    "blogPagination": {
+      "reason": "Dynamic navigation - Previous/Next article links are handled by EDS blog system, not migrated as static content"
+    },
+    "blogMeta": {
+      "categories": ["Ketogenic Food Blogger", "Ketogenic Mommy Blogger", "Low Carb Food Blogger", "Low Carb Mommy Blogger"],
+      "author": "Jen Fisch",
+      "date": "November 1, 2021",
+      "tags": ["Breakfast", "Dessert"],
+      "handling": "Convert to page metadata block at end of document"
+    },
+    "shareButtons": {
+      "reason": "Social sharing functionality excluded - not typically migrated to EDS"
+    },
+    "header": {
+      "reason": "Handled by EDS header/navigation system"
+    },
+    "footer": {
+      "reason": "Handled by EDS footer system"
+    }
+  },
+  "pageMetadata": {
+    "title": "KETO RECIPE: Peanut Butter Cup Chia Pudding",
+    "description": "I love adding nut butter to my chia pudding for a quick and easy way to change the flavor and make it feel even more decadent. Topped with some cacao nibs or sugar free chocolate chips, this dessert feels naughty even though it is full of nutritional benefits and quality fats.",
+    "image": "./images/46d8684350147878c87d0959c4d1d2e4.png",
+    "author": "Jen Fisch",
+    "date": "2021-11-01",
+    "tags": "Breakfast, Dessert",
+    "template": "blog-article"
+  },
+  "blocksUsed": [],
+  "variantMapping": {},
+  "variantManagementNotes": "No block variants needed - page is 100% default content. Blog pagination excluded as dynamic navigation."
+}

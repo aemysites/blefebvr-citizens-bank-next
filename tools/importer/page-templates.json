@@ -1,0 +1,12 @@
+{
+  "templates": [
+    {
+      "name": "blog-recipe",
+      "urls": [
+        "https://ketointhecity.com/blog/keto-recipe-peanut-butter-cup-chia-pudding"
+      ],
+      "description": "Keto recipe blog post with title, introduction, recipe image, ingredients list, and directions. All default content - no EDS blocks required.",
+      "blocks": []
+    }
+  ]
+}

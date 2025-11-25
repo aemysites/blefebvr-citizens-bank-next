@@ -1,0 +1,96 @@
+{
+  "url": "https://ketointhecity.com/blog/keto-recipe-peanut-butter-cup-chia-pudding",
+  "sections": [
+    {
+      "id": 1,
+      "name": "Blog Article",
+      "background": "light",
+      "description": "Main blog post content area",
+      "contentSequences": [
+        {
+          "sequence": 1,
+          "description": "H1 title: 'KETO RECIPE: Peanut Butter Cup Chia Pudding'"
+        },
+        {
+          "sequence": 2,
+          "description": "Horizontal rule separator"
+        },
+        {
+          "sequence": 3,
+          "description": "Introduction paragraph describing the recipe and tips"
+        },
+        {
+          "sequence": 4,
+          "description": "Large recipe image showing chia pudding in jars"
+        },
+        {
+          "sequence": 5,
+          "description": "Recipe ingredients - H3 heading 'DIRECTIONS' followed by unordered list of 7 ingredients with quantities"
+        },
+        {
+          "sequence": 6,
+          "description": "Recipe directions - 'DIRECTIONS' text followed by ordered list with 3 steps"
+        },
+        {
+          "sequence": 7,
+          "description": "Horizontal rule separator"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Blog Pagination",
+      "background": "light",
+      "description": "Previous/Next article navigation",
+      "contentSequences": [
+        {
+          "sequence": 1,
+          "description": "Two-column navigation with Previous article link (Butcher Box Turkey) and Next article link (Cream Cheese Pancakes)"
+        }
+      ]
+    }
+  ],
+  "excludedContent": {
+    "header": "Site header with navigation - handled by EDS header block",
+    "footer": "Site footer with newsletter signup and links - handled by EDS footer block",
+    "announcement": "ChocZero discount banner at top",
+    "blogMeta": "Categories, author, date, tags - will be handled as page metadata",
+    "shareButtons": "Social sharing buttons - excluded from migration"
+  },
+  "blockInventory": {
+    "localBlocks": [
+      "accordion",
+      "cards",
+      "carousel",
+      "columns",
+      "embed",
+      "footer",
+      "fragment",
+      "header",
+      "hero",
+      "modal",
+      "quote",
+      "search",
+      "table",
+      "tabs",
+      "video"
+    ],
+    "blockCollectionAvailable": [
+      {
+        "name": "hero",
+        "purpose": "Large heading, paragraph, and call-to-action buttons",
+        "url": "https://main--aem-block-collection--adobe.aem.live/block-collection/hero"
+      },
+      {
+        "name": "cards",
+        "purpose": "Grid layout of content items with images and descriptions",
+        "url": "https://main--aem-block-collection--adobe.aem.live/block-collection/cards"
+      },
+      {
+        "name": "columns",
+        "purpose": "Side-by-side content in 2-3 columns",
+        "url": "https://main--aem-block-collection--adobe.aem.live/block-collection/columns"
+      }
+    ]
+  }
+}
