@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script src="/scripts/aem.js" type="module"></script>
+<script src="/scripts/scripts.js" type="module"></script>
+<link rel="stylesheet" href="/styles/styles.css"/>
+</head>
+<body>
+<header></header>
+<main>
+<div><h1 id="block-parsers">Block Parsers</h1>
+<p>This directory contains block-specific parser functions for the import workflow.</p>
+<h2 id="current-status">Current Status</h2>
+<p><strong>No parsers needed</strong> for the current page template (<code>blog-post</code>).</p>
+<p>The blog posts from ketointhecity.com use <strong>default content only</strong>:</p>
+<ul>
+<li>Headings (H1, H3)</li>
+<li>Paragraphs</li>
+<li>Images</li>
+<li>Lists (bulleted ingredients, numbered directions)</li>
+<li>Horizontal rules</li>
+</ul>
+<p>All of this content is handled by the standard WebImporter default content extraction - no custom block parsers required.</p>
+<h2 id="when-parsers-are-needed">When Parsers Are Needed</h2>
+<p>Block parsers will be added here when migrating pages that use EDS blocks such as:</p>
+<ul>
+<li>Hero blocks</li>
+<li>Cards blocks</li>
+<li>Columns blocks</li>
+<li>Accordion blocks</li>
+<li>Custom block variants</li>
+</ul>
+<p>Each parser file will be named <code>{block-variant-name}.js</code> and follow the WebImporter parser signature.</p></div>
+</main>
+<footer></footer>
+</body>
+</html>

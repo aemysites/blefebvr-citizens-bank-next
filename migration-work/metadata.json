@@ -1,0 +1,60 @@
+{
+  "url": "https://ketointhecity.com/blog/keto-recipe-peanut-butter-cup-chia-pudding",
+  "timestamp": "2025-11-22T16:10:02.196Z",
+  "paths": {
+    "documentPath": "/blog/keto-recipe-peanut-butter-cup-chia-pudding",
+    "htmlFilePath": "/blog/keto-recipe-peanut-butter-cup-chia-pudding.plain.html",
+    "mdFilePath": "/blog/keto-recipe-peanut-butter-cup-chia-pudding.md",
+    "dirPath": "/blog",
+    "filename": "keto-recipe-peanut-butter-cup-chia-pudding"
+  },
+  "screenshot": "migration-work/screenshot.png",
+  "html": {
+    "filePath": "migration-work/cleaned.html",
+    "size": 93619
+  },
+  "metadata": {
+    "title": "KETO RECIPE: Peanut Butter Cup Chia Pudding — Keto In The City",
+    "viewport": "initial-scale=1",
+    "og:site_name": "Keto In The City",
+    "og:title": "KETO RECIPE: Peanut Butter Cup Chia Pudding — Keto In The City",
+    "og:latitude": "40.7207559",
+    "og:longitude": "-74.0007613",
+    "og:url": "https://ketointhecity.com/blog/keto-recipe-peanut-butter-cup-chia-pudding",
+    "og:type": "article",
+    "og:description": "I love adding nut butter to my chia pudding for a quick and easy way to change the flavor and make it feel even more decadent. Topped with some cacao nibs or sugar free chocolate chips, this dessert feels naughty even though it is full of nutritional benefits and quality fats.",
+    "og:image": "http://static1.squarespace.com/static/56a1b35c57eb8dec1842726c/56a1b3a17086d75e993657f7/60b42944d093263ad53710c9/1635775219552/peanut-butter-cup-chia-pudding.jpg?format=1500w",
+    "og:image:width": "1500",
+    "og:image:height": "1500",
+    "twitter:title": "KETO RECIPE: Peanut Butter Cup Chia Pudding — Keto In The City",
+    "twitter:image": "http://static1.squarespace.com/static/56a1b35c57eb8dec1842726c/56a1b3a17086d75e993657f7/60b42944d093263ad53710c9/1635775219552/peanut-butter-cup-chia-pudding.jpg?format=1500w",
+    "twitter:url": "https://ketointhecity.com/blog/keto-recipe-peanut-butter-cup-chia-pudding",
+    "twitter:card": "summary",
+    "twitter:description": "I love adding nut butter to my chia pudding for a quick and easy way to change the flavor and make it feel even more decadent. Topped with some cacao nibs or sugar free chocolate chips, this dessert feels naughty even though it is full of nutritional benefits and quality fats.",
+    "description": "I love adding nut butter to my chia pudding for a quick and easy way to \nchange the flavor and make it feel even more decadent. Topped with some \ncacao nibs or sugar free chocolate chips, this dessert feels naughty even \nthough it is full of nutritional benefits and quality fats.",
+    "google-site-verification": "JgdpKgM4CpF992DTp1Cv3ODKXhu4rTIf76MoLtCuOi8",
+    "canonical": "https://ketointhecity.com/blog/keto-recipe-peanut-butter-cup-chia-pudding",
+    "jsonLd": {
+      "url": "https://ketointhecity.com",
+      "name": "Keto In The City",
+      "description": "<p>Welcome to Keto In The City!&nbsp;I am a single mom who lives a ketogenic lifestyle and I love sharing keto recipes and tips on how to live a low carb high fat life.&nbsp;</p>",
+      "@context": "http://schema.org",
+      "@type": "WebSite"
+    }
+  },
+  "images": {
+    "count": 2,
+    "mapping": {
+      "https://p.typekit.net/p.gif?s=2&k=646866_56a1b35c57eb8dec1842726c&ht=tk&h=ketointhecity.com&f=10300.10294.10302.10296.10295.10297.12046&a=646866&js=1.21.0&app=typekit&e=js&_=1763827796751": "./images/e30a548449e3a496bc47e8260dba75e6.png",
+      "https://images.squarespace-cdn.com/content/v1/56a1b35c57eb8dec1842726c/1622419877220-UNA0XEN5T8C3DBL4N007/peanut-butter-cup-chia-pudding.jpg?format=1500w": "./images/46d8684350147878c87d0959c4d1d2e4.png"
+    },
+    "stats": {
+      "total": 2,
+      "converted": 2,
+      "skipped": 0,
+      "failed": 0,
+      "tooLarge": 0,
+      "limitReached": 0
+    }
+  }
+}
