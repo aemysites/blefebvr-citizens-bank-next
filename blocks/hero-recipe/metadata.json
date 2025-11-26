@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-recipe",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2025-11-25T14:30:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.vitamix.com/us/en_us/recipes/cinnamon-nice-cream",
+    "originPage": "recipe detail page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "comfortable",
+    "purpose": "recipe-hero",
+    "imagePattern": "side-image"
+  },
+  "contentPattern": {
+    "structure": "image + heading + description + meta-info + tags",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "recipe detail pages",
+      "food/beverage content pages",
+      "pages with image + structured metadata"
+    ],
+    "notSuitableFor": [
+      "landing pages with full-width background images",
+      "simple text-only hero sections"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/us/en_us/recipes/cinnamon-nice-cream"],
+    "reuseCount": 1,
+    "lastUsed": "2025-11-25T14:30:00.000Z"
+  }
+}

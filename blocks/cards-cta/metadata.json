@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-cta",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2025-11-25T14:30:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.vitamix.com/us/en_us/recipes/cinnamon-nice-cream",
+    "originPage": "recipe detail page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "comfortable",
+    "purpose": "cta-cards",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "eyebrow + heading + cta-button per card",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "call-to-action sections",
+      "promotional cards without images",
+      "sign-up or engagement prompts"
+    ],
+    "notSuitableFor": [
+      "product grids with images",
+      "article or blog cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/us/en_us/recipes/cinnamon-nice-cream"],
+    "reuseCount": 1,
+    "lastUsed": "2025-11-25T14:30:00.000Z"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "templates": [
+    {
+      "name": "vitamix-recipe-detail",
+      "urls": [
+        "https://www.vitamix.com/us/en_us/recipes/cinnamon-nice-cream"
+      ],
+      "description": "Vitamix recipe detail page template with hero, ingredients, directions, nutrition, and product recommendations",
+      "blocks": [
+        {
+          "name": "hero-recipe",
+          "instances": [
+            ".recipe-header",
+            ".ognm-header-recipe"
+          ]
+        },
+        {
+          "name": "table-nutrition",
+          "instances": [
+            ".nutrition",
+            ".ognm-banner-recipe__nutrition"
+          ]
+        },
+        {
+          "name": "cards-cta",
+          "instances": [
+            ".ognm-cardlist-left-aligned-caption__flex"
+          ],
+          "section": "dark"
+        },
+        {
+          "name": "cards",
+          "instances": [
+            ".ognm-cardlist-product-knockout-grid__flex"
+          ]
+        }
+      ]
+    }
+  ]
+}

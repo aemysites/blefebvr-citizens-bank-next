@@ -1,0 +1,38 @@
+{
+  "variantName": "table-nutrition",
+  "baseBlock": "table",
+  "version": "1.0.0",
+  "created": "2025-11-25T14:30:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.vitamix.com/us/en_us/recipes/cinnamon-nice-cream",
+    "originPage": "recipe detail page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "nutrition-data",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "label-value pairs in rows",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "recipe nutrition facts",
+      "product specifications",
+      "simple two-column data tables"
+    ],
+    "notSuitableFor": [
+      "complex multi-column data",
+      "comparison tables"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/us/en_us/recipes/cinnamon-nice-cream"],
+    "reuseCount": 1,
+    "lastUsed": "2025-11-25T14:30:00.000Z"
+  }
+}

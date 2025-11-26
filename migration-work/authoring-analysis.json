@@ -1,0 +1,196 @@
+{
+  "url": "https://www.vitamix.com/us/en_us/recipes/cinnamon-nice-cream",
+  "pageType": "recipe-detail",
+  "analysisNotes": "Recipe detail page. Some UI elements (navigation, form controls, reviews widget) are skipped as they require JS functionality. Focus on authorable content.",
+  "sections": [
+    {
+      "number": 1,
+      "name": "Recipe Hero",
+      "style": "light background",
+      "sectionMetadata": null,
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Recipe image + title + description + meta info (time, yield, difficulty) + dietary tags + attribution",
+          "decision": "hero-recipe",
+          "blockVariant": "hero-recipe",
+          "reason": "Complex structured hero layout with image on one side and stacked content on other. Hero block provides proper structure for large introductory content with image.",
+          "content": {
+            "image": "./images/cinnamon-nice-cream.png",
+            "imageAlt": "Cinnamon Nice Cream",
+            "title": "Cinnamon N'ice Cream",
+            "description": "Cinnamon and oat milk give this n'ice cream a bold flavor.",
+            "meta": "Total Time: 5 Minutes | Yield: 6 servings | Difficulty: Simple",
+            "tags": "Vegan, Vegetarian, Gluten-Free, High Fiber, Low Sodium, Heart Friendly, Diabetes Friendly",
+            "attribution": "Submitted by: Vitamix"
+          }
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "name": "Recipe Content",
+      "style": "light background",
+      "sectionMetadata": null,
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Ingredients heading with bulleted list of 4 ingredients",
+          "decision": "DEFAULT CONTENT",
+          "reason": "Author can type heading and bulleted list normally. Simple text content.",
+          "content": {
+            "heading": "Ingredients",
+            "type": "bullet-list",
+            "items": [
+              "1 cup (240 ml) oat milk",
+              "2 Tablespoons (15 g) ground cinnamon",
+              "2 Tablespoons (30 ml) maple syrup, optional",
+              "1 pound (454 g) frozen bananas"
+            ]
+          }
+        },
+        {
+          "sequence": 2,
+          "description": "Directions heading with numbered steps",
+          "decision": "DEFAULT CONTENT",
+          "reason": "Author can type heading and numbered list normally. Simple text content.",
+          "content": {
+            "heading": "Directions",
+            "type": "numbered-list",
+            "items": [
+              "Place all ingredients into the Vitamix container in the order listed and secure the lid.",
+              "Run the Frozen Dessert Program or start the blender on its lowest speed, then quickly increase to its highest speed. Blend for 30–40 seconds, using the tamper to push ingredients toward the blades.",
+              "In about 25–35 seconds, the sound of the motor will change and four mounds should form. Stop the machine. Do not overmix or melting will occur. Serve immediately."
+            ]
+          }
+        },
+        {
+          "sequence": 3,
+          "description": "Nutrition table with serving info and nutritional values",
+          "decision": "table-nutrition",
+          "blockVariant": "table-nutrition",
+          "reason": "Structured data with labels and values. Table block provides proper semantic structure.",
+          "content": {
+            "heading": "Nutrition",
+            "servingSize": "1 serving (127 g)",
+            "rows": [
+              ["Calories", "120"],
+              ["Total Fat", "0g"],
+              ["Total Carbohydrate", "31g"],
+              ["Dietary Fiber", "5g"],
+              ["Sugars", "17g"],
+              ["Protein", "1g"],
+              ["Cholesterol", "0mg"],
+              ["Sodium", "0mg"]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "name": "CTA Cards",
+      "style": "dark",
+      "sectionMetadata": {"style": "dark"},
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Two side-by-side CTA cards with eyebrow, heading, and button each",
+          "decision": "cards-cta",
+          "blockVariant": "cards-cta",
+          "reason": "Two repeating structured items with consistent pattern. Cards block handles grid of items with text and CTAs.",
+          "content": {
+            "cards": [
+              {
+                "eyebrow": "Share the Result",
+                "heading": "Did You Make It?",
+                "cta": "Rate the Recipe",
+                "ctaLink": "#"
+              },
+              {
+                "eyebrow": "Share Your Fav Recipes",
+                "heading": "Create Your Recipe Book",
+                "cta": "Sign Up Now",
+                "ctaLink": "/us/en_us/customer/account/create"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "name": "Product Grid",
+      "style": "light background",
+      "sectionMetadata": null,
+      "sequences": [
+        {
+          "sequence": 1,
+          "description": "Eyebrow text, heading, and CTA button",
+          "decision": "DEFAULT CONTENT",
+          "reason": "Author can type eyebrow text, heading, and link button normally. Simple stacked text content.",
+          "content": {
+            "eyebrow": "Explore Vitamix Products",
+            "heading": "Performance That Delivers",
+            "cta": "Shop Now",
+            "ctaLink": "/us/en_us/shop"
+          }
+        },
+        {
+          "sequence": 2,
+          "description": "Four product category cards with images and labels",
+          "decision": "cards",
+          "blockVariant": "cards",
+          "reason": "Four repeating items in grid layout, each with image and text. Cards block is obvious match.",
+          "content": {
+            "cards": [
+              {
+                "image": "https://www.vitamix.com/content/dam/vitamix/home/home-page/warranty_text_blenders_Transperant.png",
+                "imageAlt": "Image of Blenders",
+                "label": "Blenders",
+                "link": "/us/en_us/shop/blenders"
+              },
+              {
+                "image": "https://www.vitamix.com/content/dam/vitamix/home/home-page/Food_Processing_Categoyr.png",
+                "imageAlt": "Image of Food Processor",
+                "label": "Food Processing",
+                "link": "/us/en_us/shop/food-processing"
+              },
+              {
+                "image": "https://www.vitamix.com/content/dam/vitamix/home/home-page/ascent_Containers348x292.png",
+                "imageAlt": "Image of Accessories",
+                "label": "Containers & Accessories",
+                "link": "/us/en_us/shop/accessories"
+              },
+              {
+                "image": "https://www.vitamix.com/content/dam/vitamix/home/home-page/FC_50_528x396.png",
+                "imageAlt": "Image of Compactor",
+                "label": "Compact Food Recycling",
+                "link": "/us/en_us/shop/foodcycler-fc-50"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "blocksUsed": ["hero-recipe", "table-nutrition", "cards-cta", "cards"],
+  "variantMapping": {
+    "hero": "hero-recipe",
+    "table": "table-nutrition",
+    "cards-cta": "cards-cta",
+    "cards": "cards"
+  },
+  "skippedContent": [
+    "Recipe Navigation tabs (UI functionality, requires JS)",
+    "Save/Print/Share buttons (UI functionality)",
+    "Container size selector (form controls)",
+    "Reviews section (third-party widget)",
+    "Recipe search form (search functionality)"
+  ],
+  "pageMetadata": {
+    "title": "Cinnamon N'ice Cream",
+    "description": "Cinnamon and oat milk give this n'ice cream a bold flavor.",
+    "image": "./images/cinnamon-nice-cream.png"
+  }
+}

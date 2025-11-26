@@ -1,0 +1,66 @@
+{
+  "url": "https://www.vitamix.com/us/en_us/recipes/cinnamon-nice-cream",
+  "timestamp": "2025-11-25T14:30:00.000Z",
+  "paths": {
+    "documentPath": "/us/en_us/recipes/cinnamon-nice-cream",
+    "htmlFilePath": "us/en_us/recipes/cinnamon-nice-cream.plain.html",
+    "mdFilePath": "us/en_us/recipes/cinnamon-nice-cream.md",
+    "dirPath": "us/en_us/recipes",
+    "filename": "cinnamon-nice-cream",
+    "previewPath": "/us/en_us/recipes/cinnamon-nice-cream"
+  },
+  "screenshot": "./migration-work/screenshot.png",
+  "html": {
+    "filePath": "./migration-work/cleaned.html",
+    "size": 45230
+  },
+  "metadata": {
+    "title": "Cinnamon N'ice Cream Recipe | Vitamix",
+    "description": "Cinnamon and oat milk give this n'ice cream a bold flavor.",
+    "og:image": "",
+    "canonical": "https://www.vitamix.com/us/en_us/recipes/cinnamon-nice-cream"
+  },
+  "images": {
+    "count": 1,
+    "mapping": {
+      "https://www.vitamix.com/content/dam/vitamix/home/recipes/q2-2025/CinnamonN%27iceCream_470x449.png": "./images/cinnamon-nice-cream.png"
+    },
+    "stats": {
+      "total": 1,
+      "converted": 0,
+      "skipped": 0,
+      "failed": 0
+    }
+  },
+  "recipe": {
+    "name": "Cinnamon N'ice Cream",
+    "description": "Cinnamon and oat milk give this n'ice cream a bold flavor.",
+    "totalTime": "5 Minutes",
+    "yield": "6 servings",
+    "difficulty": "Simple",
+    "submittedBy": "Vitamix",
+    "dietaryInterests": ["Vegan", "Vegetarian", "Gluten-Free", "High Fiber", "Low Sodium", "Heart Friendly", "Diabetes Friendly"],
+    "ingredients": [
+      {"amount": "1 cup", "metric": "240 ml", "item": "oat milk"},
+      {"amount": "2 Tablespoons", "metric": "15 g", "item": "ground cinnamon"},
+      {"amount": "2 Tablespoons", "metric": "30 ml", "item": "maple syrup, optional"},
+      {"amount": "1 pound", "metric": "454 g", "item": "frozen bananas"}
+    ],
+    "directions": [
+      "Place all ingredients into the Vitamix container in the order listed and secure the lid.",
+      "Run the Frozen Dessert Program or start the blender on its lowest speed, then quickly increase to its highest speed. Blend for 30–40 seconds, using the tamper to push ingredients toward the blades.",
+      "In about 25–35 seconds, the sound of the motor will change and four mounds should form. Stop the machine. Do not overmix or melting will occur. Serve immediately."
+    ],
+    "nutrition": {
+      "servingSize": "1 serving (127 g)",
+      "calories": "120",
+      "totalFat": "0g",
+      "totalCarbohydrate": "31g",
+      "dietaryFiber": "5g",
+      "sugars": "17g",
+      "protein": "1g",
+      "cholesterol": "0mg",
+      "sodium": "0mg"
+    }
+  }
+}

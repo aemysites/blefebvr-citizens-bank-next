@@ -1,0 +1,135 @@
+{
+  "url": "https://www.vitamix.com/us/en_us/recipes/cinnamon-nice-cream",
+  "pageType": "recipe-detail",
+  "sections": [
+    {
+      "number": 1,
+      "name": "Recipe Hero",
+      "style": "light background with dark header area",
+      "contentSequences": [
+        {
+          "sequence": 1,
+          "description": "Recipe image displayed prominently on the left side"
+        },
+        {
+          "sequence": 2,
+          "description": "Recipe title heading, star rating with review count, description paragraph, and meta info list (Total Time, Yield, Difficulty) in icon format"
+        },
+        {
+          "sequence": 3,
+          "description": "Dietary interests tags (Vegan, Vegetarian, Gluten-Free, etc.) and 'Submitted by: Vitamix' attribution"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "name": "Recipe Navigation",
+      "style": "light background with red accent underline",
+      "contentSequences": [
+        {
+          "sequence": 1,
+          "description": "Horizontal navigation tabs (THE RECIPE, NUTRITIONAL FACTS, REVIEWS) with Cook Mode toggle switch on right"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "name": "Recipe Content",
+      "style": "light background, two-column layout",
+      "contentSequences": [
+        {
+          "sequence": 1,
+          "description": "Action buttons row: Save, Print, Share icons with labels in dark background bar"
+        },
+        {
+          "sequence": 2,
+          "description": "Left sidebar: 'Refine Your Recipe' section with Container Size dropdown options (48-ounce, 64-ounce Low Profile)"
+        },
+        {
+          "sequence": 3,
+          "description": "Left sidebar: Nutrition table with serving size and values (Calories, Total Fat, Carbohydrate, Fiber, Sugars, Protein, Cholesterol, Sodium)"
+        },
+        {
+          "sequence": 4,
+          "description": "Main content: 'Ingredients' heading with Imperial/Metric toggle, bulleted list of 4 ingredients with amounts"
+        },
+        {
+          "sequence": 5,
+          "description": "Main content: 'Directions' heading with numbered steps (3 steps), carousel dots and prev/next navigation at bottom"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "name": "CTA Cards",
+      "style": "dark grey background (#333f48)",
+      "contentSequences": [
+        {
+          "sequence": 1,
+          "description": "Two side-by-side cards: Left card 'Did You Make It?' with 'Rate the Recipe' button, Right card 'Create Your Recipe Book' with 'Sign Up Now' button"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "name": "Reviews",
+      "style": "light grey background",
+      "contentSequences": [
+        {
+          "sequence": 1,
+          "description": "'Reviews' heading with empty star rating display and 'Be the first to review this recipe' button"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "name": "Recipe Search",
+      "style": "dark blue/grey background (#333f48)",
+      "contentSequences": [
+        {
+          "sequence": 1,
+          "description": "'What Else Did You Want To Make Today?' heading with search input field and SUBMIT button"
+        },
+        {
+          "sequence": 2,
+          "description": "'Popular Searches' heading with tag buttons: SOUP, HOLIDAY SEASON, SMOOTHIES"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "name": "Product Grid",
+      "style": "light background",
+      "contentSequences": [
+        {
+          "sequence": 1,
+          "description": "Eyebrow text 'EXPLORE VITAMIX PRODUCTS', heading 'Performance That Delivers', and 'SHOP NOW' button"
+        },
+        {
+          "sequence": 2,
+          "description": "Four product category cards in grid: Blenders, Food Processing, Containers & Accessories, Compact Food Recycling - each with product image and label"
+        }
+      ]
+    }
+  ],
+  "blockInventory": {
+    "localBlocks": [
+      {"name": "accordion", "purpose": "Expandable sections for FAQs or collapsed content"},
+      {"name": "cards", "purpose": "Grid layout of content items with images, headings, and descriptions"},
+      {"name": "carousel", "purpose": "Rotating slideshow of images or content"},
+      {"name": "columns", "purpose": "Side-by-side content in 2-3 columns"},
+      {"name": "embed", "purpose": "Embed external content (videos, social media, etc.)"},
+      {"name": "footer", "purpose": "Page footer (auto-populated)"},
+      {"name": "fragment", "purpose": "Reusable content section"},
+      {"name": "header", "purpose": "Page header (auto-populated)"},
+      {"name": "hero", "purpose": "Large heading, text, and buttons at top of page"},
+      {"name": "modal", "purpose": "Popup dialog content"},
+      {"name": "quote", "purpose": "Highlighted testimonial or pullquote"},
+      {"name": "search", "purpose": "Search input with results"},
+      {"name": "table", "purpose": "Data table with rows and columns"},
+      {"name": "tabs", "purpose": "Content organized in switchable tabs"},
+      {"name": "video", "purpose": "Video player embed"}
+    ],
+    "notes": "Project has comprehensive block library. Most common blocks already available."
+  }
+}

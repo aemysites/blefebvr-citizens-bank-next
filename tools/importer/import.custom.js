@@ -1,4 +1,3 @@
-
 /*
  * Copyright 2025 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -11,30 +10,53 @@
  * governing permissions and limitations under the License.
  */
 
+// Import parsers
+import heroRecipeParser from './parsers/hero-recipe.js';
+import tableNutritionParser from './parsers/table-nutrition.js';
+import cardsCtaParser from './parsers/cards-cta.js';
+import cardsParser from './parsers/cards.js';
+
+// Import transformers
+import vitamixCleanup from './transformers/vitamix-cleanup.js';
+
 /**
  * A map of custom parser names to imported parser functions.
- *
- * eg.
- * {
- *   myParser: customParser1,
- * }
  */
-export const customParsers = {};
+export const customParsers = {
+  'hero-recipe': heroRecipeParser,
+  'table-nutrition': tableNutritionParser,
+  'cards-cta': cardsCtaParser,
+  cards: cardsParser,
+};
 
 /**
  * An array of custom page elements to parse.
  * The name is the parser name.
  * If the element is a string, it will be used as a selector to the element to parse.
  * If the element is not provided, the parser will be applied to the main element.
- *
- * eg.
- * [
- *   { name: 'myParser', element: 'selector' },
- * ]
  */
-export const customElements = [];
+export const customElements = [
+  {
+    name: 'hero-recipe',
+    element: 'section.recipe-header, .ognm-header-recipe',
+  },
+  {
+    name: 'table-nutrition',
+    element: '.nutrition, .ognm-banner-recipe__nutrition',
+  },
+  {
+    name: 'cards-cta',
+    element: '.ognm-cardlist-left-aligned-caption__flex',
+  },
+  {
+    name: 'cards',
+    element: '.ognm-cardlist-product-knockout-grid__flex',
+  },
+];
 
 /**
- * Custom transformers
+ * Custom transformers - applied before parsing
  */
-export const customTransformers = {};
+export const customTransformers = {
+  vitamix: vitamixCleanup,
+};
