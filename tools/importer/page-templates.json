@@ -1,0 +1,16 @@
+{
+  "templates": [
+    {
+      "name": "frameconcept-blog-listing",
+      "urls": ["https://michaelgrob.ch/frameconcept.ch/"],
+      "description": "Frameconcept photography portfolio blog listing page with cards grid",
+      "blocks": [
+        {
+          "name": "cards-blog",
+          "selector": ".posts",
+          "description": "Grid of blog post cards with images, titles, and excerpts"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "variantName": "cards-blog",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-01-07T16:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://michaelgrob.ch/frameconcept.ch/",
+    "originPage": "Photography portfolio blog listing page",
+    "blockPosition": "main"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "purpose": "blog-listing",
+    "imagePattern": "featured-landscape"
+  },
+  "contentPattern": {
+    "structure": "image + title link + excerpt",
+    "buttonCount": 0,
+    "imageCount": 1,
+    "hasLinks": true
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "blog post listings",
+      "article index pages",
+      "portfolio galleries",
+      "news listings"
+    ],
+    "notSuitableFor": [
+      "product catalogs with prices",
+      "feature grids without images",
+      "team member listings"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/frameconcept-ch/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-01-07T16:10:00.000Z"
+  }
+}
